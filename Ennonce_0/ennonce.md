@@ -14,6 +14,14 @@ $app = function($request, $response, $next){
 
 };
 
+$middleware = function($request, $response, $next){
+
+};
+
+$send = $middleware($request, $response, function($request, $response) use($app){
+
+});
+
 // enchainer les deux middlewares $app et $middleware
 
 ```
