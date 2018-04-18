@@ -19,3 +19,5 @@ send($response);
 //  $uri = (string) $request->getUri(); // permet de récupérer l'url entièrement 
 // $uri[-1];
 // utilise substr() pour virer le slash en trop
+
+// et pensez à faire une redirection 301 !!!
