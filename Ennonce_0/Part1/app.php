@@ -14,3 +14,8 @@ $uri = $request->getUri()->getPath();
 $response->getBody()->write('Hello Home page...');
 
 send($response);
+
+// faire un middleware pour retirer le "/" en trop dans l'url 
+//  $uri = (string) $request->getUri(); // permet de récupérer l'url entièrement 
+// $uri[-1];
+// utilise substr() pour virer le slash en trop
