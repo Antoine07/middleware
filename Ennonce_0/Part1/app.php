@@ -11,7 +11,6 @@ $response = new \GuzzleHttp\Psr7\Response();
 
 $uri = $request->getUri()->getPath();
 
-$uri = $request->getUri()->getPath();
 $response->getBody()->write('Hello Home page...');
 
 send($response);
